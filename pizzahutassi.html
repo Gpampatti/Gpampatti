@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title> Pizza Hut Assignment</title>
+    </head>
+    <style>
+        table{
+            width:100% ;
+            border-collapse: collapse;
+            border-top: 1px solid black;
+            border-bottom: 1px solid black ;
+            
+        }
+        td:nth-child(2){
+            border-left:solid 1px white;
+        }
+        .required::after{
+            content: "*";
+            color: red;
+            
+        }
+        tr:nth-child(even){
+            background:rgb(94, 89, 89) ;
+        }
+        td{
+            width: 50%;
+        }
+        button{
+            background-color: blue;
+            color: aliceblue;
+            border: black;
+            padding-left: 50px;
+            padding-top:10px ;
+            padding-bottom: 10px;
+
+        }
+        .para{
+            background-color: green;
+            color: aliceblue;
+            padding-bottom: 5px;
+            text-align: right;
+        }
+    </style>
+    <body>
+        <img src="image/pizzahut.png"> <br><br><br><br>
+        <a href="" target="_blank">click here for important points to be noted</a><br>
+        <button type="button">save and next</button><br><br>
+        <div class="para">
+            <p>#copyright 2022 created by Gayatri</p>
+        </div><br><br>
+        <table>
+            <tr>
+                <td class="required">First Name</td>
+                <td> <input type="text" name="text" value=" " maxlength="35">(maximum 35 characters)</td>
+            </tr>
+            <tr>
+                <td class="required">Conform First Name</td>
+                <td><input type="text" name="text" value=" " maxlength="35">(maximum 35 characters)</td>
+            </tr>
+            <tr>
+                <td class="required">Middle Name</td>
+                <td> <input type="text" name="text" value=" " maxlength="35">(maximum 35 characters)</td>
+            </tr>
+            <tr>
+                <td class="required">Conform Middle Name</td>
+                <td> <input type="text" name="text" value=" " maxlength="35">(maximum 35 characters)</td>
+            </tr>
+            <tr>
+                <td class="required">Last Name</td>
+                <td> <input type="text" name="text" value=" " maxlength="35">(maximum 35 characters)</td>
+            </tr>
+            <tr>
+                <td class="required">Conform Last Name</td>
+                <td> <input type="text" name="text" value=" " maxlength="35">(maximum 35 characters)</td>
+            </tr>
+            <tr>
+                <td class="required">Full Name</td>
+                <td> <input type="text" name="text" value=" " maxlength="35">(maximum 35 characters)</td>
+            </tr>
+            <tr>
+                <td></td>
+                <td> <p style="text-align:right;">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Et magni voluptatem quia quis sit iusto fugit numquam, delectus atque corporis sapiente iure? Voluptatibus dolor odio placeat libero ad sint similique.</p></td>
+            </tr>
+            <tr>
+                <td class="required">Mobile Number</td>
+                <td> +91<input type="number" name="number" value="num" maxlength="10">(10 digits)Please do not prefix zero.</td>
+            </tr>
+            <tr>
+                <td class="required">Conform Mobile Number</td>
+                <td> +91<input type="number" name="number" value="num" maxlength="10">(10 digits)Please do not prefix zero.</td>
+            </tr>
+            <tr>
+                <td class="required">Alternate Mobile Number</td>
+                <td> <input type="number" name="number" value="num" maxlength="10">(10 digits)Please do not prefix zero.</td>
+            </tr>
+            <tr>
+                <td> </td>
+                <td> <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Et magni voluptatem quia quis sit iusto fugit numquam, delectus atque corporis sapiente iure? Voluptatibus dolor odio placeat libero ad sint similique.</p></td>
+            </tr>
+            <tr>
+                <td class="required">Email id</td>
+                <td> <input type="email" name="email" value=" "></td>
+            </tr>
+            <tr>
+                <td> </td>
+                <td> <p>Enter the word in to the text box as in the image</p></td>
+            </tr>
+            <tr>
+                <td class="required">Security Code</td>
+                <td><input type="password" name="password" value=""></td>
+            </tr>
+            
+            
+        </table>
+    </body>
+</html>
