@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Form Assignment</title>
+        <style>
+            
+            #box1{
+                height: 200px;
+                width:500px;
+                box-align: center;
+                border: 2px solid black;
+                border-radius: 20px;
+                box-shadow: 4px 4px 5px 3px gray;
+                margin-right: auto;
+                margin-left: auto;
+            }
+            #box2{
+                height: 300px;
+                width:480px;
+                padding: 12px;
+                box-align: center;
+                border: 2px solid black;
+                border-radius: 20px;
+                margin-right: auto;
+                margin-left: auto;
+                
+            }
+            input[type=text]{
+                width: 450px;
+                margin: 8px 0;
+                box-sizing: border-box;
+                border: none;
+                border-bottom: 1px solid black;
+            }
+            input[type=date]{
+                width: 450px;
+                margin: 8px 0;
+                box-sizing: border-box;
+                border: none;
+                border-bottom: 1px solid black;
+            }
+            input[type=email]{
+                width: 450px;
+                margin: 8px 0;
+                box-sizing: border-box;
+                border: none;
+                border-bottom: 1px solid black;
+            }
+            input[type=Submit]{
+                border:2px skyblue solid;
+                border-radius: 20px;
+                padding:8px ;
+                font-weight: bold;
+                margin:2px ;
+                cursor:pointer ; 
+                box-shadow: 4px 4px 5px 3px gray;              
+               
+            }
+            .btn{
+                display: flex;
+                justify-content: center;
+                align-items: center;              
+
+            }
+            .required:after{
+                content: "*";
+                color: red;
+            }
+            .b2{
+                display:inline;
+                justify-content: center;
+                align-items: center;
+
+            }
+        </style>
+    </head>
+    <body class="b2">
+        <div id="box1">
+            <h2><b> Java Full Stack Devloper-Pre Employment Screening Test</b></h2>
+            <ol type="1">
+                <li>has 30 questions in all Each questions carries on mark each</li>
+                <li>All questions are compalsory and has no negative marking.</li>
+                <li>For any consent, please connect with the HR</li>
+            </ol>
+            <p style="color:red;">*Required</p>
+        </div> <br><br>
+        <div id="box2">
+            <form action="flagassign.html" method="post">
+                <label for="fname" class="required"> Name of Applicant</label><br>
+                <input type="text" id="fname" name="fname" placeholder="your answer" required><br>
+                <label for="date" class="required">Date of Assesment</label><br>
+                <input type="date" id="date" name="date" required><br>
+                <label for="email" class="required">Email</label><br>
+                <input type="email" id="email" name="email" placeholder="your answer" required><br>
+                <label class="required">Country</label><br><br>
+                <select>
+                    <optgroup label="country"> 
+                        <option>   </option>
+                        <option>India</option>
+                        <option>USA</option>
+                        <option>London</option>
+                    </optgroup>
+                </select><br><br>  
+                <div class="btn" >            
+                    <input type="Submit" name="Submit" value="Submit">                    
+                </div>
+            </form>
+        </div>
+    </body>
+</html>
